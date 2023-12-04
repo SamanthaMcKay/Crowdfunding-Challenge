@@ -32,8 +32,7 @@ Excel
 
 #### Campaign Outcome by Category
 
-![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/17c2d447-4fc8-4b20-b1a8-971004354ee5)
-
+![image](https://github.com/SamanthaMcKay/Excel-Challenge/assets/132176159/5cc5e509-5b58-4ef0-af93-aebaa827350c)
 
 -  On a new sheet, made a pivot table that summarizes the number of campaigns that were successful, failed, cancelled, or currently live by sub-category.
   -  Created a stacked-pivot chart that can be filtered by the country and parent category based on the previous pivot chart.
