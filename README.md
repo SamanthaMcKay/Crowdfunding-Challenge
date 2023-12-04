@@ -22,20 +22,36 @@ Excel
    success designation of the campaign.
 -  Created a new column 'Percent Funded' utilizing a formula to calculate the amount of money a
    campaign made relative to the initial funding goal.
--  Set the color of the cells in the 'Percent Funded' column with conditional formatting on a      three color scale from 0 (dark red), 100 (green), and 200 (blue).
--  Created a new column 'Average Donation' that utilizes a formula to calculate the average        donor contribution.
--  Split the Category and Sub-Category column into two columns named 'Parent Category' and         'Sub-Category'.
+-  Set the color of the cells in the 'Percent Funded' column with conditional formatting on a three color scale from 0 (dark red), 100 (green), and 200 (blue).
+-  Created a new column 'Average Donation' that utilizes a formula to calculate the average donor contribution.
+-  Split the Category and Sub-Category column into two columns named 'Parent Category' and 'Sub-Category'.
 
 ## Pivot Table
--  Created a pivot table that summarizes the number of campaigns that were successful, failed,     cancelled, or currently live by parent category.
-  -  Created a stacked-pivot chart that can be filtered by the country based on the previous         pivot chart.
--  On a new sheet, made a pivot table that summarizes the number of campaigns that were            successful, failed, cancelled, or currently live by sub-category.
-  -  Created a stacked-pivot chart that can be filtered by the country and parent category           based on the previous pivot chart.
--  Converted the 'launched at' and 'deadline' columns from Unix timestamp to a normal date         format.
+-  Created a pivot table that summarizes the number of campaigns that were successful, failed, cancelled, or currently live by parent category.
+  -  Created a stacked-pivot chart that can be filtered by the country based on the previous pivot chart.
+
+#### Campaign Outcome by Category
+
+![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/17c2d447-4fc8-4b20-b1a8-971004354ee5)
+
+
+-  On a new sheet, made a pivot table that summarizes the number of campaigns that were successful, failed, cancelled, or currently live by sub-category.
+  -  Created a stacked-pivot chart that can be filtered by the country and parent category based on the previous pivot chart.
+
+#### Campaign Outcome by Sub-Category
+
+![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/0b4f7072-8a3a-4ede-a2b4-f516a5a7cf8a)
+
+-  Converted the 'launched at' and 'deadline' columns from Unix timestamp to a normal date format.
   -  Created two new columns 'Date Created Conversion' and 'Date Ended Conversion' that contain
      the converted date data.
-  -  Created a pivot table that displays the count of outcomes for each Date Created Conversion      value that can be filtered based on the parent category and Years.
+  -  Created a pivot table that displays the count of outcomes for each Date Created Conversion value that can be filtered based on the parent category and Years.
   -  Created a pivot chart that visualizes the above pivot table data.
+
+#### Crowdfunding Outcomes by Year
+
+![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/9a7c5ba2-fac2-4829-9182-dedaadf4e633)
+
 
 ## Analysis
 See the Word document for initial analysis.
@@ -47,21 +63,31 @@ See the Word document for initial analysis.
        -  Less than 1000, 1000-4999, 9 groups that increment up by 5,000 with each new
           section (ie 5000-9999)up to 49,999, and greater than or equal to 50,000.
   -  'Number Successful'
-    -  Populated by using COUNTIFS() to count the number of successful projects were in each           goal range.
+    -  Populated by using COUNTIFS() to count the number of successful projects were in each goal range.
   -  'Number Failed'
-    -  Populated by using COUNTIFS() to count the number of failed projects were in each               goal range.
+    -  Populated by using COUNTIFS() to count the number of failed projects were in each goal range.
   -  'Number Cancelled'
-    -  Populated by using COUNTIFS() to count the number of cancelled projects were in each            goal range.
+    -  Populated by using COUNTIFS() to count the number of cancelled projects were in each goal range.
   -  'Total Projects'
-    -  The total number of projects, calculated by summing the number successful, failed and           cancelled.
+    -  The total number of projects, calculated by summing the number successful, failed and cancelled.
   -  'Percent Successful'
   -  'Percent Failed'
   -  'Percent Cancelled'
--  Made a line chart to assess if there is a correlation between the goal amount and the chance    of success, failure, and cancellation.
+-  Made a line chart to assess if there is a correlation between the goal amount and the chance of success, failure, and cancellation.
+
+#### Line Chart: Outcome Percentage by Goal Range
+
+![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/6b0767f2-f129-43dd-b00c-cd36b2f50ec2)
+
 
 ### Statistical Analysis
--  Created a summary statistics table that lists the number of campaign backers for successful     and unsuccessful campaigns.
--  Evaluated the mean, median, minimum, maximum, variance, and standard deviation in the number    of backers for successful and unsuccessful campaigns.
+-  Created a summary statistics table that lists the number of campaign backers for successful and unsuccessful campaigns.
+-  Evaluated the mean, median, minimum, maximum, variance, and standard deviation in the number of backers for successful and unsuccessful campaigns.
+
+#### Summary Snapshot
+
+![image](https://github.com/SamanthaMcKay/Crowdfunding-Challenge/assets/132176159/7c883b49-6489-4b46-a7d1-e8585f6a7726)
+
 
 ## Conclusion
 This was my first main project utilizing pivot tables. I enjoyed the statistical analysis of the data to look for trends.
